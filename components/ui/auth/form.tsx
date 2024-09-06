@@ -36,6 +36,8 @@ const Form = ({
   showPassword,
   setShowPassword,
   isLoading,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  type,
 }: {
   error: string | null;
   handleOAuthSignUp: (
@@ -49,11 +51,12 @@ const Form = ({
   showPassword: boolean;
   setShowPassword: React.Dispatch<React.SetStateAction<boolean>>;
   isLoading: boolean;
+  type: "sign-in" | "sign-up";
 }) => {
   return (
     <CardContent className="space-y-4">
       {error && <ErrorMessage message={error} />}
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-5 sm:gap-4 gap-[4px]">
         {[
           { provider: "google", icon: google },
           { provider: "apple", icon: apple },

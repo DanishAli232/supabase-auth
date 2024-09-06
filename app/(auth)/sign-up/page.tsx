@@ -54,7 +54,9 @@ export default function SignUp() {
   const handleOAuthSignUp = async (
     provider: "apple" | "facebook" | "google" | "twitter" | "azure"
   ) => {
-    const { error } = await supabase.auth.signInWithOAuth({ provider });
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider,
+    });
     if (error) {
       setError(error.message);
     }
@@ -82,6 +84,7 @@ export default function SignUp() {
           showPassword={showPassword}
           setShowPassword={setShowPassword}
           isLoading={isLoading}
+          type="sign-up"
         />
         <CardFooter className="justify-center pt-4 pb-6 bg-gray-50 border-t  rounded-bl-[14px] rounded-br-[14px] ">
           <p className="text-sm text-gray-500">
