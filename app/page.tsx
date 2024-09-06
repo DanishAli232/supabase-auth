@@ -35,13 +35,13 @@ export default function Home() {
           </p>
           <div className="space-x-4">
             <a
-              href="/signin"
+              href="/sign-in"
               className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
             >
               Sign In
             </a>
             <a
-              href="/signup"
+              href="/sign-up"
               className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
             >
               Sign Up
