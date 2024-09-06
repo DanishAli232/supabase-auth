@@ -83,7 +83,7 @@ export default function SignUp() {
           setShowPassword={setShowPassword}
           isLoading={isLoading}
         />
-        <CardFooter className="justify-center pt-4 pb-6 bg-gray-50 border-t ">
+        <CardFooter className="justify-center pt-4 pb-6 bg-gray-50 border-t  rounded-bl-[14px] rounded-br-[14px] ">
           <p className="text-sm text-gray-500">
             Already have an account?{" "}
             <Link href="/sign-in" className=" font-semibold hover:underline ">
